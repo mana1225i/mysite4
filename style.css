@@ -1,0 +1,238 @@
+@charset "UTF-8";
+@import url(css/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  font-family: 'Noto Sans CJK JP','noto-sans-cjk-jp', 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  word-break: break-all;
+  -webkit-text-size-adjust: 100%;
+}
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+a {
+  color: #333;
+  text-decoration: none;
+  transition: .3s;
+}
+a.hover {
+  opacity: 0.3; 
+  /* 透明度を下げる */
+  color: white;
+  transition: .3s;
+}
+
+.inner {
+  max-width: 1200px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+main .inner {
+  margin: 62px auto;
+}
+
+/* ヘッター */
+
+header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+}
+
+header h1 {
+  font-weight: 400;
+  font-size: 28px;
+  padding: 12px 0;
+  background-color: #fff;
+}
+
+header nav ul {
+  display: flex;
+}
+
+#nv {
+  background: #333;
+}
+
+header nav li {
+  padding: 8px 64px 8px 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+#pickup ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 110px;
+}
+
+#pickup ul li {
+  width: 32%;
+  padding: 36px 0; 
+}
+
+#pickup ul li h2 {
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  padding: 16px 0;
+}
+
+.read {
+  width: 84px;
+  margin: 0 auto;
+}
+
+.read a {
+  width: 84px;
+  margin: 0 auto;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  position: relative;
+}
+
+.read a::after {
+  position: absolute;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #000;
+  bottom: -1px;
+  transform: scale(0,1);
+  transform-origin: right top;
+  transition: transform 0.5s;
+}
+
+.read a:hover::after {
+  transform: scale(1,1);
+  transform-origin: left top;
+}
+
+/* メイン */
+
+#main {
+  display: flex;
+}
+
+aside {
+  flex-basis: 1000px;
+  padding: 42px;
+}
+
+main {
+  padding-right: 32px;
+}
+
+#main .art h2 {
+  padding: 82px 0 16px;
+}
+
+#main .art img {
+  padding: 10px 0;
+}
+
+#main .art p {
+  padding: 8px 62px;
+}
+
+aside .author img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 32px 84px ;
+}
+
+aside .author h3 {
+  display: block;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+aside .author p {
+  display: block;
+  text-align: center;
+  padding-bottom: 32px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+aside .ranking h3 {
+  display: block;
+  text-align: center;
+  padding: 32px;
+}
+
+aside .ranking article img {
+  padding:  12px 0;
+}
+
+aside .ranking article h4 {
+  padding-bottom: 32px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+aside .archive h3 {
+  display: block;
+  text-align: center;
+  padding: 32px;
+}
+
+aside .archive ul {
+  font-weight: 300;
+  border-top: #777 solid 1px;
+}
+
+aside .archive li {
+  padding: 14px;
+  border-bottom: #777 solid 1px;
+}
+
+/* フッター */
+footer {
+  background: #f7f7f7;
+  height: 500px;
+  margin-top: 120px;
+}
+
+footer .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .item {
+  padding: 36px 36px 0 36px;
+  max-width: 33%;
+}
+
+footer .item h3 {
+  padding-bottom: 32px;
+}
+
+footer .item p {
+  line-height: 1.5em;
+  font-weight: 300;
+}
+
+footer .item li {
+  padding: 16px;
+}
+
+/* .twitter-tweet iframe {
+  max-width: 20%;
+  aspect-ratio: 1/3;
+} */
